@@ -1,0 +1,95 @@
+// style.scss
+// @import "bootstrap";
+@import "./abstract/mixin";
+$light-color: #ebeef0;
+body {
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  margin-bottom: 20px;
+}
+
+.hero-section {
+  background: url("../assets/images/p6.jpg") no-repeat center center;
+  background-size: cover;
+  padding: 100px 0;
+  color: #fff;
+  text-align: center;
+}
+
+.featured-products {
+  margin: 50px 0;
+}
+
+.promotions {
+  background: #f9f9f9;
+  padding: 20px;
+  text-align: center;
+  margin: 50px 0;
+}
+
+footer {
+  padding: 20px;
+  background: #f1f1f1;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 50px 0;
+  }
+}
+// Section Styles
+section {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 2rem;
+
+  .section-item {
+    display: flex;
+    flex-direction: column; // this is adjustment
+    justify-content: center;
+    align-items: center;
+    background-color: $light-color;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-sizing: border-box;
+
+    h2,
+    p {
+      margin-bottom: 1rem;
+    }
+
+    img {
+      width: 150px; // this is adjustment
+      height: 150px; // this is adjustment
+      object-fit: cover;
+      border-radius: 1rem;
+    }
+  }
+
+  @include respond-to("sm") {
+    .section-item {
+      grid-column: span 12;
+    }
+  }
+
+  @include respond-to("md") {
+    .section-item {
+      grid-column: span 3; // this is adjustment
+    }
+  }
+
+  @include respond-to("lg") {
+    .section-item {
+      grid-column: span 6;
+    }
+  }
+
+  @include respond-to("xl") {
+    .section-item {
+      grid-column: span 6;
+    }
+  }
+}

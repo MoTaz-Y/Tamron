@@ -1,0 +1,54 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Alice Smith",
+      "Email": "AliceSmith21@tamron.net",
+      "password": "password123",
+      "image": "../images/users/1.avif",
+      "location": "New York, NY",
+      "phone_number": "+1234567890",
+      "purchases": []
+    },
+    {
+      "id": 2,
+      "name": "Bob Johnson",
+      "Email": "BobJohnson10@tamron.net",
+      "password": "securepass456",
+      "image": "../images/users/2.avif",
+      "location": "San Francisco, CA",
+      "phone_number": "+1234567891",
+      "purchases": []
+    },
+    {
+      "id": 3,
+      "name": "Carol Williams",
+      "Email": "CarolWilliams101@tamron.net",
+      "password": "mypassword789",
+      "image": "../images/users/3.avif",
+      "location": "Los Angeles, CA",
+      "phone_number": "+1234567892",
+      "purchases": []
+    },
+    {
+      "id": 4,
+      "name": "David Brown",
+      "Email": "DavidBrown101@tamron.net",
+      "password": "passw0rd!",
+      "image": "../images/users/4.jpg",
+      "location": "Chicago, IL",
+      "phone_number": "+1234567893",
+      "purchases": []
+    },
+    {
+      "id": 5,
+      "name": "Eve Davis",
+      "Email": "vEveDavis101@tamron.net",
+      "password": "eveDavis#2023",
+      "image": "../images/users/5.jpg",
+      "location": "Miami, FL",
+      "phone_number": "+1234567894",
+      "purchases": []
+    }
+  ]
+}

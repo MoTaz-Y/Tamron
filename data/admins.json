@@ -1,0 +1,11 @@
+{
+  "admins": [
+    {
+      "id": 1,
+      "username": "adminUser",
+      "Email": "superadmin@tamron.net",
+      "password": "hashedPassword",
+      "role": "admin"
+    }
+  ]
+}

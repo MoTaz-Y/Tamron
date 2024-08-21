@@ -1,0 +1,71 @@
+.checkout {
+    display: flex;
+    /* align-items: start; */
+    justify-content: space-between;
+}
+
+.contactWithUser,
+.purcheresDetails {
+    width: 50%;
+}
+
+.contactWithUser {
+    padding: 0px 50px;
+}
+
+.contactWithUser form input::placeholder,
+.contactWithUser form label,
+.contactWithUser form h4 {
+    text-transform: capitalize;
+}
+
+.contactWithUser button {
+    margin: 10px auto;
+    position: relative;
+    left: 50%;
+    color: white;
+    border: none;
+    outline: none;
+    background-color: var(--mainBlue);
+    transform: translate(-50%,0);
+    -webkit-transform: translate(-50%,0);
+    -moz-transform: translate(-50%,0);
+    -ms-transform: translate(-50%,0);
+    -o-transform: translate(-50%,0);
+}
+
+.purcheresDetails {
+    background-color: var(--maingray);
+    border-left: 1px solid gray;
+    padding: 25px 100px;
+}
+
+.subTotal ,.shipping ,.total{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    text-transform: capitalize;
+}
+.subTotal{
+    margin-top: 30px;
+}
+.total{
+    padding-top: 20px;
+    border-top: 1px solid gray;
+}
+@media (max-width:768px) {
+    .checkout{
+        flex-direction: column;
+    }
+    .contactWithUser,.purcheresDetails{
+        width: 100%;
+    }
+    .contactWithUser button{
+        width: 100%;
+    }
+    .purcheresDetails{
+        padding: 25px;
+        border: 1px solid gray;
+        margin-top: 50px;
+    }
+}

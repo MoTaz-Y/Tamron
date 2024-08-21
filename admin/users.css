@@ -1,0 +1,12 @@
+.hidden {
+  display: none;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  table,
+  table button {
+    font-size: 10px !important;
+  }
+}

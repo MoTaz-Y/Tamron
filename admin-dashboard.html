@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard - E-commerce</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">E-commerce</a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="product-catalog.html">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="shopping-cart.html">Cart</a>
+          </li>
+        </ul>
+        <div id="login-register"></div>
+      </div>
+    </nav>
+
+    <!-- Admin Dashboard -->
+    <div class="container mt-5">
+      <h1>Admin Dashboard</h1>
+      <div class="row">
+        <div class="col-md-4">
+          <h2>Product Management</h2>
+          <button class="btn btn-primary" id="add-product">Add Product</button>
+          <div class="product-list mt-3" id="product-list">
+            <!-- Product List Example -->
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h2>Order Management</h2>
+          <div class="order-list mt-3" id="order-list">
+            <!-- Order List Example -->
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h2>Customer Management</h2>
+          <div class="customer-list mt-3" id="customer-list">
+            <!-- Customer List Example -->
+          </div>
+        </div>
+      </div>
+      <h2>Sales Analytics</h2>
+      <canvas id="salesChart" width="400" height="200"></canvas>
+    </div>
+
+    <script src="js/jq-3-7-1.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/admin-dashboard.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,221 @@
+body {
+  background-color: var(--maingray);
+}
+.dashboardnav {
+  padding: 30px 40px;
+  display: flex;
+  align-items: center;
+}
+.dashboardnav input {
+  margin-right: 20%;
+  padding: 12px 10px;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  width: 30%;
+  border: none;
+  outline: none;
+  margin-left: 20%;
+  box-shadow: 1px 1px 2px gray, -1px -1px 2px gray;
+}
+.dashboardContainer {
+  display: flex;
+  justify-content: space-between;
+  /* height: 90%; */
+}
+.dashBoardSideBar {
+  width: 25%;
+  background-color: white;
+  padding: 20px 0px;
+}
+.dashBoardSideBar h1,
+.dashBoardSideBar h2 {
+  color: var(--mainBlue);
+  padding: 25px 20px;
+  border-left: 6px solid var(--mainBlue);
+}
+.dashBoardSideBar .dashBoardBtn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.dashBoardSideBar h1 {
+  margin-bottom: 35px;
+}
+.dashBoardSideBar h1,
+.dashBoardSideBar button {
+  text-transform: capitalize;
+}
+.dashBoardSideBar button {
+  width: 85%;
+  outline: none;
+  background-color: var(--maingray);
+  padding: 15px 25px;
+  border: none;
+  margin-bottom: 25px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 17px;
+  transition: all 2s;
+  -webkit-transition: all 2s;
+  -moz-transition: all 2s;
+  -ms-transition: all 2s;
+  -o-transition: all 2s;
+}
+.dashBoardSideBar button:hover {
+  background-color: var(--mainBlue);
+  color: white;
+}
+.btnFocus {
+  background-color: #005baa !important;
+  color: white;
+}
+.table {
+  width: 70%;
+}
+.userTableContainer,
+.sellerTableContainer,
+.productTableContainer {
+  padding: 0px 10px;
+  display: none;
+}
+iframe {
+  width: 100%;
+  height: 200vh;
+}
+.tableHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.tableHeader button {
+  padding: 15px 20px;
+  cursor: pointer;
+  color: white;
+  background-color: var(--mainBlue);
+  text-transform: capitalize;
+  margin-right: 15%;
+  border: none;
+  outline: none;
+  text-transform: capitalize;
+  font-size: 15px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+.table h2 {
+  font-size: 35px;
+  padding: 10px 20px;
+  border-left: 4px solid var(--mainBlue);
+  text-transform: capitalize;
+  margin-bottom: 30px;
+}
+.table table {
+  width: 90%;
+  border-spacing: 0px 18px;
+}
+
+.table table th {
+  color: var(--mainBlue);
+  font-size: 22px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.table table tbody tr {
+  text-align: center;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.table table tbody tr td {
+  background-color: white;
+  padding: 10px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  text-transform: capitalize;
+}
+.table table tbody tr td:first-of-type {
+  border-left: 1px solid black;
+  border-top-left-radius: 35px;
+  border-bottom-left-radius: 35px;
+}
+.table table tbody tr td:last-of-type {
+  border-right: 1px solid black;
+  border-top-right-radius: 35px;
+  border-bottom-right-radius: 35px;
+}
+.table table tbody tr td:nth-child(even) {
+  color: var(--mainBlue);
+}
+
+.action button {
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  color: white;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.action button:first-of-type {
+  background-color: #28a745;
+  margin-bottom: 7px;
+}
+.action button:last-of-type {
+  background-color: red;
+}
+@media (max-width: 768px) {
+  .dashboardContainer {
+    flex-direction: column;
+    padding: 0;
+  }
+  .dashBoardSideBar {
+    width: 100%;
+    margin-right: 0;
+    padding: 0;
+    height: fit-content;
+    padding-bottom: 30px;
+  }
+  .dashBoardBtn {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .table {
+    margin-top: 60px;
+    width: 100%;
+    font-size: 15px !important;
+  }
+  .table table {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .tableHeader {
+    margin-top: 30px;
+  }
+  .tableHeader button {
+    width: 30%;
+  }
+  .table tr,
+  .table tr td {
+    padding: 0;
+  }
+  .table table th {
+    font-size: 18px;
+  }
+  .table table button {
+    padding: 10px;
+    font-size: 10px;
+  }
+}

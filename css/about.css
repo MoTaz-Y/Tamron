@@ -1,0 +1,108 @@
+.aboutHeader {
+  position: relative;
+  height: 600px;
+  overflow: hidden;
+}
+.aboutHeader img {
+  width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.aboutHeader h1 {
+  font-family: "Dosis", sans-serif;
+  text-transform: capitalize;
+  font-size: 70px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  z-index: 10;
+}
+.aboutHeader .overlayh {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  background-color: var(--overlay);
+}
+.aboutBody {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  margin: 50px auto;
+}
+.aboutBody img {
+  width: 45%;
+  height: 500px;
+  margin-right: 50px;
+}
+.aboutContent .tab-content {
+  padding: 35px 50px;
+  font-size: 19px;
+}
+.aboutContent .nav-tabs button {
+  color: black;
+  width: 33%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  font-size: 22px;
+}
+.aboutContent .nav-tabs button:focus {
+  background-color: var(--mainBlue);
+  color: white;
+}
+.aboutDescription {
+  background-color: var(--mianBeige);
+  padding: 100px 0;
+}
+.aboutDescription .descriptionContent {
+  width: 65%;
+  margin: 0 auto;
+  text-align: center;
+}
+.descriptionContent h2 {
+  font-size: 55px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+.descriptionContent h4 {
+  margin-top: 80px;
+}
+.descriptionContent p {
+  font-size: 19px;
+  line-height: 1.7;
+}
+.descriptionContent h4,
+.descriptionContent h5 {
+  text-transform: capitalize;
+}
+.descriptionContent h5 {
+  font-size: 18px;
+}
+footer {
+  margin-top: 0 !important;
+}
+@media (max-width: 786px) {
+  .aboutBody {
+    flex-direction: column;
+  }
+  .aboutBody img,
+  .aboutBody .aboutContent {
+    width: 100%;
+  }
+  .aboutBody img {
+    margin-bottom: 50px;
+  }
+  .aboutDescription .descriptionContent {
+    width: 100%;
+    padding: 50px;
+  }
+}

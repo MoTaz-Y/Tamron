@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="https://www.tamron.eu/_nuxt/img/logo-white.0f71243.svg" />
+  <title>Product Catalog - E-commerce</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/shop.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <!-- navigation bar  -->
+  <nav class="container-fluid">
+    <ul>
+      <li class="navLogo">
+        <a class="navbar-brand" href="index.html">
+          <img src="https://www.tamron.eu/_nuxt/img/logo.33390d0.svg" alt="Logo" /></a>
+      </li>
+      <li class="d-none d-lg-block">
+        <ul class="navSec">
+          <li><a href="index.html">home</a></li>
+          <li><a href="product-catalog.html">products</a></li>
+          <li><a href="./about.html">about</a></li>
+          <li><a href="./contact.html">contact</a></li>
+        </ul>
+      </li>
+      <li class="d-none d-lg-block">
+        <ul class="navReg" id="login-register"></ul>
+      </li>
+      <li class="smallNav d-block d-lg-none">
+        <i class="fa-solid fa-bars" id="sideNavButton"></i>
+      </li>
+    </ul>
+  </nav>
+  <!-- end navigation bar  -->
+  <!-- the small navigator  -->
+  <div class="displayNavSmall d-lg-none" id="naveSideBar" style="top: 80px">
+    <div class="smallNavHeader" tabindex="-1" id="navBarMenu">
+      <div id="smallLogo">
+        <img src="https://www.tamron.eu/_nuxt/img/logo-white.0f71243.svg" alt="navLogo" />
+        <button id="closeSmallNav"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <ul class="navSec">
+        <li><a href="index.html">home</a></li>
+        <li><a href="product-catalog.html">products</a></li>
+        <li><a href="./about.html">about</a></li>
+        <li><a href="./contact.html">contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="overlay"></div>
+  <!-- end of small nav bar -->
+  <!-- Start of Header -->
+  <header>
+    <div class="headd">
+      <div class="headeroverlay"></div>
+    </div>
+    <div class="headerContainer">
+      <img src="Images/header3.webp" alt="" />
+      <div class="header-content">
+        <h1>enjoy happy shopping</h1>
+        <h3>for new products</h3>
+        <button id="moreDetails">more details</button>
+      </div>
+    </div>
+  </header>
+  <!-- end of Header -->
+  <!-- main product field  -->
+  <div class="buy">
+    <!-- new update -->
+    <div class="productContainer">
+      <div id="pageNumber"></div>
+      <div class="filter col-12">
+        <button class="mainButton filterBtn">
+          <i class="fa-solid fa-filter"></i> filter
+        </button>
+      </div>
+      <div class="products" id="product-catalog">
+        <!-- Product Cards will be dynamically inserted here -->
+      </div>
+      <div id="productPageNumber">
+        <button class="nextPrevBtn">&lt; </button>
+        <div class="pageChangeBtnContainer"></div>
+        <!-- <button class="pageChangeBtn">1</button>
+            <button class="pageChangeBtn">2</button>
+            <button class="pageChangeBtn">3</button> -->
+        <button class="nextPrevBtn">&gt; </button>
+      </div>
+    </div>
+    <!-- end of new uodate -->
+    <div class="categories">
+      <div class="category">
+        <h3>Category</h3>
+        <div class="multicoloborder"></div>
+        <div class="categoryOption">
+          <input type="radio" name="category" id="category_all" value="allCategories" checked />
+          <label for="category_all">All Categories</label>
+        </div>
+        <div class="categoryOption">
+          <input type="radio" name="category" id="category_laptop" value="Electronics" />
+          <label for="category_laptop">Electronics</label>
+        </div>
+        <div class="categoryOption">
+          <input type="radio" name="category" id="category_phone" value="Gaming" />
+          <label for="category_phone">Gaming</label>
+        </div>
+        <div class="categoryOption">
+          <input type="radio" name="category" id="category_tablet" value="Computers" />
+          <label for="category_tablet">Computers</label>
+        </div>
+        <div class="categoryOption">
+          <input type="radio" name="category" id="category_tablet" value="Home" />
+          <label for="category_tablet">Home </label>
+        </div>
+        <div class="categoryOption">
+          <input type="radio" name="category" id="category_tablet" value="Cameras" />
+          <label for="category_tablet">Cameras </label>
+        </div>
+        <div class="categoryOption">
+          <input type="radio" name="category" id="category_tablet" value="Fitness" />
+          <label for="category_tablet">Fitness </label>
+        </div>
+      </div>
+      <div class="category">
+        <h3>Brands</h3>
+        <div class="multicoloborder"></div>
+        <div class="brandOption">
+          <input type="radio" name="brand" id="brand_all" value="allBrands" checked />
+          <label for="brand_all">All Brands</label>
+        </div>
+        <div class="brandOption">
+          <input type="radio" name="brand" id="brand_dell" value="dell" />
+          <label for="brand_dell">Dell</label>
+        </div>
+        <div class="brandOption">
+          <input type="radio" name="brand" id="brand_hp" value="hp" />
+          <label for="brand_hp">HP</label>
+        </div>
+        <div class="brandOption">
+          <input type="radio" name="brand" id="brand_samsung" value="samsung" />
+          <label for="brand_samsung">Samsung</label>
+        </div>
+        <div class="brandOption">
+          <input type="radio" name="brand" id="brand_iphone" value="iphone" />
+          <label for="brand_iphone">iPhone</label>
+        </div>
+      </div>
+      <div class="category">
+        <h3>Price</h3>
+        <div class="multicoloborder"></div>
+        <input type="range" name="rangeprice" id="price" min="100" max="3000" step="100" />
+      </div>
+    </div>
+  </div>
+  <!-- main product field  -->
+
+  <!-- category side  -->
+  <div class="displayNavSmall" id="categorySide">
+    <div class="smallNavHeader" tabindex="-1" id="navBarMenu">
+      <div id="smallLogo">
+        <h3>Filter</h3>
+        <button id="closeNav"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="category navSec">
+        <h3>Category</h3>
+        <div class="multicoloborder"></div>
+        <div class="catrgoryOption">
+          <input type="radio" name="category" id="category" value="allCategories" checked />
+          <label for="category">All Categories</label>
+        </div>
+        <div class="catrgoryOption">
+          <input type="radio" name="category" id="category2" value="laptop" />
+          <label for="category2">Laptop</label>
+        </div>
+        <div class="catrgoryOption">
+          <input type="radio" name="category" id="category3" value="phone" />
+          <label for="category3">Phone</label>
+        </div>
+        <div class="catrgoryOption">
+          <input type="radio" name="category" id="category4" value="tablet" />
+          <label for="category4">Tablet</label>
+        </div>
+      </div>
+      <div class="category navSec">
+        <h3>Brands</h3>
+        <div class="multicoloborder"></div>
+        <div class="brandOption">
+          <input type="radio" name="brand" id="brand" value="dell" checked />
+          <label for="brand">Dell</label>
+        </div>
+        <div class="brandOption">
+          <input type="radio" name="brand" id="brand2" value="hp" />
+          <label for="brand2">HP</label>
+        </div>
+        <div class="brandOption">
+          <input type="radio" name="brand" id="brand3" value="samsung" />
+          <label for="brand3">Samsung</label>
+        </div>
+        <div class="brandOption">
+          <input type="radio" name="brand" id="brand4" value="iphone" />
+          <label for="brand4">iPhone</label>
+        </div>
+      </div>
+      <div class="category navSec">
+        <h3>Price</h3>
+        <div class="multicoloborder"></div>
+        <input type="range" name="rangeprice" id="price" min="300" max="5000" step="100" />
+      </div>
+    </div>
+  </div>
+  <!-- category side  -->
+
+  <!-- overlay -->
+  <div class="overlay"></div>
+  <!-- overlay -->
+
+  <!-- Sidebar -->
+  <div class="sideBarContainer" id="sideBarContainer">
+    <div class="displaySideBar" id="cartDisplay">
+      <div class="smallSideBar">
+        <div class="smallSideHeader" tabindex="-1" id="navBarMenu">
+          <div id="smallLogo">
+            <h3>Shopping Cart</h3>
+            <button id="closeNav">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+          <div class="navSide" id="cart-items">
+            <!-- Cart items will be dynamically inserted here -->
+          </div>
+          <div class="checkout">
+            <div class="totalPrice" id="cart-total">
+              <!-- Total price will be dynamically inserted here -->
+            </div>
+            <button class="mainButton" id="checkout-btn">Checkout</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Sidebar -->
+
+  <!-- login register  -->
+  <div class="modal fade" id="loginRegisterModal" tabindex="-1" aria-labelledby="loginRegisterLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="btn-group modalHeaderBtn" role="group">
+            <button type="button" class="btn btn-outline-primary" id="showLoginForm">
+              Login
+            </button>
+            <button type="button" class="btn btn-outline-primary" id="showRegisterForm">
+              Register
+            </button>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body loginRegister login">
+          <!-- Login Form -->
+          <form id="loginForm" class="needs-validation loginForm" novalidate>
+            <div class="mb-3">
+              <label for="loginEmail" class="form-label">Email <span>*</span></label>
+              <input type="text" class="form-control" id="loginEmail" placeholder="Email" required />
+              <div class="valid-feedback">Looks good!</div>
+              <div class="invalid-feedback">Invalid email.</div>
+            </div>
+            <div class="mb-3">
+              <label for="loginPassword" class="form-label">Password <span>*</span></label>
+              <input type="password" class="form-control" id="loginPassword" placeholder="Password" required />
+              <div class="valid-feedback">Looks good!</div>
+              <div class="invalid-feedback">Invalid password.</div>
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+          </form>
+          <!-- Register Form -->
+          <form id="registerForm" class="needs-validation" novalidate>
+            <div class="mb-3">
+              <label for="registerFullname" class="form-label">Full Name <span>*</span></label>
+              <input type="text" class="form-control" id="registerFullname" placeholder="Full Name" required />
+              <div class="valid-feedback">Looks good!</div>
+              <div class="invalid-feedback">Please enter your full name.</div>
+            </div>
+            <div class="mb-3">
+              <label for="registerEmail" class="form-label">Email <span>*</span></label>
+              <input type="text" class="form-control" id="registerEmail" placeholder="Email" required />
+              <div class="valid-feedback">Looks good!</div>
+              <div class="invalid-feedback">Invalid email.</div>
+            </div>
+            <div class="mb-3">
+              <label for="registerPassword" class="form-label">Password <span>*</span></label>
+              <input type="password" class="form-control" id="registerPassword" placeholder="Password" required />
+              <div class="valid-feedback">Looks good!</div>
+              <div class="invalid-feedback">
+                Password must be more than 6 characters, contain digits and
+                special characters.
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="registerConfirmPassword" class="form-label">Confirm Password <span>*</span></label>
+              <input type="password" class="form-control" id="registerConfirmPassword" placeholder="Confirm Password"
+                required />
+              <div class="valid-feedback">Looks good!</div>
+              <div class="invalid-feedback">Passwords do not match.</div>
+            </div>
+            <button type="submit" class="btn btn-primary">Register</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- login register  -->
+  <!-- footer starts  -->
+  <footer class="container-fluid">
+    <div class="container footerHead">
+      <div class="footermain">
+        <h6>Medical Devices</h6>
+        <h6>Industrial Optics</h6>
+        <h6>Technical Information</h6>
+      </div>
+      <div class="contact">
+        <p>Central: +49 (0) 221 / 66 95 44-0</p>
+        <p>Service: +49 (0) 221 / 66 95 44-135</p>
+        <p>Fax: +49 (0) 221 / 66 95 44-404</p>
+      </div>
+      <div class="time">
+        <p>We are available by phone Monday through</p>
+        <p>Thursday from 8:30 am to 5:00 pm and Friday</p>
+        <p>from 8:30 am to 3:30 pm.</p>
+      </div>
+      <div class="socials">
+        <p>visit us</p>
+        <div class="socialmedia">
+          <div class="social">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          </div>
+          <div class="social">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+          <div class="social">
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footerFoot container">
+      <img src="https://www.tamron.eu/_nuxt/img/logo.33390d0.svg" alt="" />
+      <p>copyRights &copy; reserved to tamron</p>
+      <div>
+        <a href="#" >imprint</a>
+        <a href="#">privacy</a>
+        <a href="#">contact</a>
+        <a href="#">cookies</a>
+      </div>
+    </div>
+  </footer>
+  <!-- footer ends -->
+  <script src="js/jq-3-7-1.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="js/loginRegistration.js"></script>
+  <script src="js/produtPaggination.js"></script>
+  <script src="./js/shopping-cart.js" type="module"></script>
+  <script src="js/product-catalog.js" type="module"></script>
+</body>
+
+</html>

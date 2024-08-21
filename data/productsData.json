@@ -1,0 +1,308 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Wireless Headphones",
+      "description": "High-quality wireless headphones with noise cancellation.",
+      "price": 99.99,
+      "image": "../images/products/headphone.jpg",
+      "category": "Electronics",
+      "rating": 4.5,
+      "reviews": [
+        { "user": "Alice", "comment": "Great sound quality!", "rating": 5 },
+        { "user": "Bob", "comment": "Very comfortable to wear.", "rating": 4 }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Smart Watch",
+      "description": "Fitness tracking and notifications on your wrist.",
+      "price": 149.99,
+      "image": "../images/products/smartwatch.jpg",
+      "category": "Electronics",
+      "rating": 4.7,
+      "reviews": [
+        {
+          "user": "Carol",
+          "comment": "Excellent features for fitness tracking.",
+          "rating": 5
+        },
+        {
+          "user": "Dave",
+          "comment": "Battery life could be better.",
+          "rating": 4
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Bluetooth Speaker",
+      "description": "Portable speaker with high-quality sound.",
+      "price": 39.99,
+      "image": "../images/products/speaker.jpg",
+      "category": "Electronics",
+      "rating": 4.3,
+      "reviews": [
+        { "user": "Eve", "comment": "Great sound for its size.", "rating": 4 },
+        {
+          "user": "Frank",
+          "comment": "Easy to connect to devices.",
+          "rating": 5
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Laptop",
+      "description": "Powerful laptop for work and entertainment.",
+      "price": 899.99,
+      "image": "../images/products/laptop.jpg",
+      "category": "Computers",
+      "rating": 4.8,
+      "reviews": [
+        { "user": "Grace", "comment": "Fast and reliable.", "rating": 5 },
+        { "user": "Heidi", "comment": "Great battery life.", "rating": 5 }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Smartphone",
+      "description": "Latest smartphone with advanced features.",
+      "price": 699.99,
+      "image": "../images/products/smartphone.jpg",
+      "category": "Electronics",
+      "rating": 4.6,
+      "reviews": [
+        { "user": "Ivan", "comment": "Amazing camera quality.", "rating": 5 },
+        {
+          "user": "Judy",
+          "comment": "Very user-friendly interface.",
+          "rating": 4
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Gaming Console",
+      "description": "Next-gen gaming console with immersive graphics.",
+      "price": 499.99,
+      "image": "../images/products/console.jpg",
+      "category": "Gaming",
+      "rating": 4.9,
+      "reviews": [
+        {
+          "user": "Mallory",
+          "comment": "Best gaming experience ever.",
+          "rating": 5
+        },
+        {
+          "user": "Oscar",
+          "comment": "Wide range of games available.",
+          "rating": 5
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "4K TV",
+      "description": "Ultra HD television with stunning picture quality.",
+      "price": 599.99,
+      "image": "../images/products/tv.jpg",
+      "category": "Home Entertainment",
+      "rating": 4.7,
+      "reviews": [
+        {
+          "user": "Peggy",
+          "comment": "Amazing clarity and colors.",
+          "rating": 5
+        },
+        { "user": "Trent", "comment": "Easy to set up.", "rating": 4 }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Digital Camera",
+      "description": "High-resolution camera for professional photography.",
+      "price": 299.99,
+      "image": "../images/products/camera.jpg",
+      "category": "Cameras",
+      "rating": 4.5,
+      "reviews": [
+        { "user": "Sybil", "comment": "Fantastic image quality.", "rating": 5 },
+        {
+          "user": "Walter",
+          "comment": "Lightweight and easy to use.",
+          "rating": 4
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Electric Kettle",
+      "description": "Fast-boiling electric kettle with auto shut-off.",
+      "price": 29.99,
+      "image": "../images/products/kettle.jpg",
+      "category": "Home Appliances",
+      "rating": 4.3,
+      "reviews": [
+        { "user": "Victor", "comment": "Boils water quickly.", "rating": 4 },
+        {
+          "user": "Yvonne",
+          "comment": "Safe and convenient to use.",
+          "rating": 4
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Blender",
+      "description": "High-speed blender for smoothies and shakes.",
+      "price": 49.99,
+      "image": "../images/products/blender.jpg",
+      "category": "Home Appliances",
+      "rating": 4.4,
+      "reviews": [
+        { "user": "Xander", "comment": "Blends smoothly.", "rating": 4 },
+        { "user": "Zara", "comment": "Easy to clean.", "rating": 5 }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Fitness Tracker",
+      "description": "Track your fitness goals with this smart band.",
+      "price": 59.99,
+      "image": "../images/products/fitness-tracker.jpg",
+      "category": "Fitness",
+      "rating": 4.2,
+      "reviews": [
+        { "user": "Quinn", "comment": "Helps me stay active.", "rating": 4 },
+        { "user": "Rita", "comment": "Accurate tracking.", "rating": 4 }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Coffee Maker",
+      "description": "Brew your favorite coffee with this compact machine.",
+      "price": 79.99,
+      "image": "../images/products/coffee-maker.jpg",
+      "category": "Home Appliances",
+      "rating": 4.5,
+      "reviews": [
+        { "user": "Steve", "comment": "Makes great coffee.", "rating": 5 },
+        { "user": "Tina", "comment": "Very easy to use.", "rating": 4 }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Tablet",
+      "description": "Portable tablet with a stunning display.",
+      "price": 249.99,
+      "image": "../images/products/tablet.jpg",
+      "category": "Electronics",
+      "rating": 4.6,
+      "reviews": [
+        {
+          "user": "Uma",
+          "comment": "Perfect for reading and browsing.",
+          "rating": 5
+        },
+        { "user": "Vince", "comment": "Lightweight and fast.", "rating": 4 }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Electric Shaver",
+      "description": "Smooth and comfortable shaving experience.",
+      "price": 39.99,
+      "image": "../images/products/shaver.jpg",
+      "category": "Personal Care",
+      "rating": 4.4,
+      "reviews": [
+        { "user": "Wendy", "comment": "Works great.", "rating": 4 },
+        { "user": "Xavier", "comment": "Easy to clean.", "rating": 4 }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Action Camera",
+      "description": "Capture your adventures in 4K resolution.",
+      "price": 149.99,
+      "image": "../images/products/action-camera.jpg",
+      "category": "Cameras",
+      "rating": 4.7,
+      "reviews": [
+        {
+          "user": "Yasmin",
+          "comment": "Great for outdoor activities.",
+          "rating": 5
+        },
+        { "user": "Zane", "comment": "Durable and waterproof.", "rating": 4 }
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Wireless Mouse",
+      "description": "Ergonomic wireless mouse for comfortable use.",
+      "price": 24.99,
+      "image": "../images/products/mouse.jpg",
+      "category": "Computers",
+      "rating": 4.3,
+      "reviews": [
+        { "user": "Abby", "comment": "Smooth and responsive.", "rating": 4 },
+        { "user": "Brian", "comment": "Long battery life.", "rating": 4 }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Desk Lamp",
+      "description": "Adjustable LED desk lamp with USB charging port.",
+      "price": 29.99,
+      "image": "../images/products/desk-lamp.jpg",
+      "category": "Home Office",
+      "rating": 4.5,
+      "reviews": [
+        { "user": "Cathy", "comment": "Bright and adjustable.", "rating": 5 },
+        { "user": "Daniel", "comment": "Very useful.", "rating": 4 }
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Backpack",
+      "description": "Durable backpack with multiple compartments.",
+      "price": 59.99,
+      "image": "../images/products/backpack.jpg",
+      "category": "Travel",
+      "rating": 4.6,
+      "reviews": [
+        { "user": "Ella", "comment": "Lots of space.", "rating": 5 },
+        { "user": "Frank", "comment": "Comfortable to wear.", "rating": 4 }
+      ]
+    },
+    {
+      "id": 19,
+      "name": "Electric Toothbrush",
+      "description": "Rechargeable electric toothbrush for better oral care.",
+      "price": 49.99,
+      "image": "../images/products/toothbrush.jpg",
+      "category": "Personal Care",
+      "rating": 4.4,
+      "reviews": [
+        { "user": "Gina", "comment": "Cleans very well.", "rating": 5 },
+        { "user": "Henry", "comment": "Battery lasts long.", "rating": 4 }
+      ]
+    },
+    {
+      "id": 20,
+      "name": "Yoga Mat",
+      "description": "Non-slip yoga mat for all your exercises.",
+      "price": 19.99,
+      "image": "../images/products/yoga-mat.jpg",
+      "category": "Fitness",
+      "rating": 4.3,
+      "reviews": [
+        { "user": "Ivy", "comment": "Great grip.", "rating": 4 },
+        { "user": "Jack", "comment": "Very comfortable.", "rating": 4 }
+      ]
+    }
+  ]
+}

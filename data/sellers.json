@@ -1,0 +1,664 @@
+{
+  "sellers": [
+    {
+      "id": 1,
+      "seller_Name": "John Doe",
+      "seller_Image": "../images/users/8.avif",
+      "Email": "JohnDoeh99@tamron.net",
+      "password": "helo!",
+      "products": [
+        {
+          "id": 10000001,
+          "product_Name": "Wireless Headphones",
+          "description": "High-quality wireless headphones with noise cancellation.",
+          "price": 99.99,
+          "image": "../images/products/headphone.jpg",
+          "category": "Electronics",
+          "brand": "Samsung",
+          "rating": 4.5,
+          "seller_id": 1,
+          "reviews": [
+            { "user": "Alice", "comment": "Great sound quality!", "rating": 5 },
+            {
+              "user": "Bob",
+              "comment": "Very comfortable to wear.",
+              "rating": 4
+            }
+          ],
+          "about": "These wireless headphones offer superior sound quality with active noise cancellation. Perfect for music lovers and those who need to focus in noisy environments.",
+          "stock": 50
+        },
+        {
+          "id": 10000002,
+          "product_Name": "Smart Watch",
+          "description": "Fitness tracking and notifications on your wrist.",
+          "price": 149.99,
+          "image": "../images/products/smartwatch.jpg",
+          "category": "Electronics",
+          "brand": "HP",
+          "rating": 4.7,
+          "seller_id": 1,
+          "reviews": [
+            {
+              "user": "Carol",
+              "comment": "Excellent features for fitness tracking.",
+              "rating": 5
+            },
+            {
+              "user": "Dave",
+              "comment": "Battery life could be better.",
+              "rating": 4
+            }
+          ],
+          "about": "Stay connected and monitor your health with this smart watch. Features include fitness tracking, heart rate monitoring, and customizable notifications.",
+          "stock": 30
+        },
+        {
+          "id": 10000003,
+          "product_Name": "Bluetooth Speaker",
+          "description": "Portable speaker with high-quality sound.",
+          "price": 39.99,
+          "image": "../images/products/speaker.jpg",
+          "category": "Electronics",
+          "brand": "Samsung",
+          "rating": 4.3,
+          "seller_id": 1,
+          "reviews": [
+            {
+              "user": "Eve",
+              "comment": "Great sound for its size.",
+              "rating": 4
+            },
+            {
+              "user": "Frank",
+              "comment": "Easy to connect to devices.",
+              "rating": 5
+            }
+          ],
+          "about": "This portable Bluetooth speaker delivers powerful sound and deep bass. Perfect for parties, picnics, and on-the-go listening.",
+          "stock": 100
+        },
+        {
+          "id": 10000004,
+          "product_Name": "Laptop",
+          "description": "Powerful laptop for work and entertainment.",
+          "price": 899.99,
+          "image": "../images/products/laptop.jpg",
+          "category": "Computers",
+          "brand": "HP",
+          "rating": 4.8,
+          "seller_id": 1,
+          "reviews": [
+            { "user": "Grace", "comment": "Fast and reliable.", "rating": 5 },
+            { "user": "Heidi", "comment": "Great battery life.", "rating": 5 }
+          ],
+          "about": "A versatile laptop that combines power and performance. Ideal for both professional tasks and entertainment needs.",
+          "stock": 25
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "seller_Name": "Jane Smith",
+      "seller_Image": "../images/users/12.jpg",
+      "Email": "JaneSmith99@tamron.net",
+      "password": "green!",
+      "products": [
+        {
+          "id": 10000005,
+          "product_Name": "Wireless Headphones",
+          "description": "High-quality wireless headphones with noise cancellation.",
+          "price": 99.99,
+          "image": "../images/products/headphone.jpg",
+          "category": "Electronics",
+          "brand": "Samsung",
+          "rating": 4.5,
+          "seller_id": 2,
+          "reviews": [
+            { "user": "Alice", "comment": "Great sound quality!", "rating": 5 },
+            {
+              "user": "Bob",
+              "comment": "Very comfortable to wear.",
+              "rating": 4
+            }
+          ],
+          "about": "These wireless headphones offer superior sound quality with active noise cancellation. Perfect for music lovers and those who need to focus in noisy environments.",
+          "stock": 50
+        },
+        {
+          "id": 10000006,
+          "product_Name": "Smart Watch",
+          "description": "Fitness tracking and notifications on your wrist.",
+          "price": 149.99,
+          "image": "../images/products/smartwatch.jpg",
+          "category": "Electronics",
+          "brand": "HP",
+          "rating": 4.7,
+          "seller_id": 2,
+          "reviews": [
+            {
+              "user": "Carol",
+              "comment": "Excellent features for fitness tracking.",
+              "rating": 5
+            },
+            {
+              "user": "Dave",
+              "comment": "Battery life could be better.",
+              "rating": 4
+            }
+          ],
+          "about": "Stay connected and monitor your health with this smart watch. Features include fitness tracking, heart rate monitoring, and customizable notifications.",
+          "stock": 30
+        },
+        {
+          "id": 10000007,
+          "product_Name": "Bluetooth Speaker",
+          "description": "Portable speaker with high-quality sound.",
+          "price": 39.99,
+          "image": "../images/products/speaker.jpg",
+          "category": "Electronics",
+          "brand": "Samsung",
+          "rating": 4.3,
+          "seller_id": 2,
+          "reviews": [
+            {
+              "user": "Eve",
+              "comment": "Great sound for its size.",
+              "rating": 4
+            },
+            {
+              "user": "Frank",
+              "comment": "Easy to connect to devices.",
+              "rating": 5
+            }
+          ],
+          "about": "This portable Bluetooth speaker delivers powerful sound and deep bass. Perfect for parties, picnics, and on-the-go listening.",
+          "stock": 100
+        },
+        {
+          "id": 10000008,
+          "product_Name": "Laptop",
+          "description": "Powerful laptop for work and entertainment.",
+          "price": 899.99,
+          "image": "../images/products/laptop.jpg",
+          "category": "Computers",
+          "brand": "HP",
+          "rating": 4.8,
+          "seller_id": 2,
+          "reviews": [
+            { "user": "Grace", "comment": "Fast and reliable.", "rating": 5 },
+            { "user": "Heidi", "comment": "Great battery life.", "rating": 5 }
+          ],
+          "about": "A versatile laptop that combines power and performance. Ideal for both professional tasks and entertainment needs.",
+          "stock": 25
+        },
+        {
+          "id": 10000009,
+          "product_Name": "Smartphone",
+          "description": "Latest smartphone with advanced features.",
+          "price": 699.99,
+          "image": "../images/products/smartphone.jpg",
+          "category": "Electronics",
+          "brand": "iPhone",
+          "rating": 4.6,
+          "seller_id": 2,
+          "reviews": [
+            {
+              "user": "Ivan",
+              "comment": "Amazing camera quality.",
+              "rating": 5
+            },
+            {
+              "user": "Judy",
+              "comment": "Very user-friendly interface.",
+              "rating": 4
+            }
+          ],
+          "about": "Experience cutting-edge technology with this latest smartphone. Features include a high-resolution camera, fast processing, and a user-friendly interface.",
+          "stock": 40
+        },
+        {
+          "id": 10000010,
+          "product_Name": "Gaming Console",
+          "description": "Next-gen gaming console with immersive graphics.",
+          "price": 499.99,
+          "image": "../images/products/console.jpg",
+          "category": "Gaming",
+          "brand": "Samsung",
+          "rating": 4.9,
+          "seller_id": 2,
+          "reviews": [
+            {
+              "user": "Mallory",
+              "comment": "Best gaming experience ever.",
+              "rating": 5
+            },
+            {
+              "user": "Oscar",
+              "comment": "Wide range of games available.",
+              "rating": 5
+            }
+          ],
+          "about": "Dive into the world of next-gen gaming with this powerful console. Enjoy stunning graphics and a vast library of games.",
+          "stock": 20
+        },
+        {
+          "id": 10000011,
+          "product_Name": "4K TV",
+          "description": "Ultra HD television with stunning picture quality.",
+          "price": 599.99,
+          "image": "../images/products/tv.jpg",
+          "category": "Home",
+          "brand": "Samsung",
+          "rating": 4.7,
+          "seller_id": 2,
+          "reviews": [
+            {
+              "user": "Peggy",
+              "comment": "Amazing clarity and colors.",
+              "rating": 5
+            },
+            { "user": "Trent", "comment": "Easy to set up.", "rating": 4 }
+          ],
+          "about": "Experience true-to-life picture quality with this 4K Ultra HD TV. Perfect for movies, sports, and gaming.",
+          "stock": 15
+        },
+        {
+          "id": 10000012,
+          "product_Name": "Digital Camera",
+          "description": "High-resolution camera for professional photography.",
+          "price": 299.99,
+          "image": "../images/products/camera.jpg",
+          "category": "Cameras",
+          "brand": "Samsung",
+          "rating": 4.5,
+          "seller_id": 2,
+          "reviews": [
+            {
+              "user": "Sybil",
+              "comment": "Fantastic image quality.",
+              "rating": 5
+            },
+            {
+              "user": "Walter",
+              "comment": "Lightweight and easy to use.",
+              "rating": 4
+            }
+          ],
+          "about": "Capture stunning photos with this high-resolution digital camera. Ideal for both amateur and professional photographers.",
+          "stock": 35
+        },
+        {
+          "id": 10000013,
+          "product_Name": "Electric Kettle",
+          "description": "Fast-boiling electric kettle with auto shut-off.",
+          "price": 29.99,
+          "image": "../images/products/kettle.jpg",
+          "category": "Home",
+          "brand": "Samsung",
+          "rating": 4.3,
+          "seller_id": 2,
+          "reviews": [
+            {
+              "user": "Victor",
+              "comment": "Boils water quickly.",
+              "rating": 4
+            },
+            {
+              "user": "Yvonne",
+              "comment": "Safe and convenient to use.",
+              "rating": 4
+            }
+          ],
+          "about": "Quickly boil water with this efficient electric kettle. Features include auto shut-off and a sleek design.",
+          "stock": 60
+        },
+        {
+          "id": 10000014,
+          "product_Name": "Blender",
+          "description": "High-speed blender for smoothies and shakes.",
+          "price": 49.99,
+          "image": "../images/products/blender.jpg",
+          "category": "Home",
+          "brand": "Dell",
+          "rating": 4.4,
+          "seller_id": 2,
+          "reviews": [
+            { "user": "Xander", "comment": "Blends smoothly.", "rating": 4 },
+            { "user": "Zara", "comment": "Easy to clean.", "rating": 5 }
+          ],
+          "about": "Create delicious smoothies and shakes with this high-speed blender. Easy to use and clean.",
+          "stock": 80
+        },
+        {
+          "id": 10000015,
+          "product_Name": "Fitness Tracker",
+          "description": "Track your fitness goals with this smart band.",
+          "price": 59.99,
+          "image": "../images/products/fitness-tracker.jpg",
+          "category": "Fitness",
+          "brand": "Samsung",
+          "rating": 4.2,
+          "seller_id": 2,
+          "reviews": [
+            {
+              "user": "Quinn",
+              "comment": "Helps me stay active.",
+              "rating": 4
+            },
+            { "user": "Rita", "comment": "Accurate tracking.", "rating": 4 }
+          ],
+          "about": "Stay motivated and track your fitness goals with this smart fitness tracker. Features include heart rate monitoring and activity tracking.",
+          "stock": 45
+        },
+        {
+          "id": 10000016,
+          "product_Name": "Coffee Maker",
+          "description": "Brew your favorite coffee with this compact machine.",
+          "price": 79.99,
+          "image": "../images/products/coffee-maker.jpg",
+          "category": "Home",
+          "brand": "Samsung",
+          "rating": 4.5,
+          "seller_id": 2,
+          "reviews": [
+            { "user": "Steve", "comment": "Makes great coffee.", "rating": 5 },
+            { "user": "Uma", "comment": "Easy to use.", "rating": 4 }
+          ],
+          "about": "Brew delicious coffee at home with this compact coffee maker. Easy to use and clean, perfect for coffee lovers.",
+          "stock": 70
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "seller_Name": "Emily Johnson",
+      "seller_Image": "../images/users/4.jpg",
+      "Email": "emily99@tamron.net",
+      "password": "purge!",
+      "products": [
+        {
+          "id": 10000017,
+          "product_Name": "Smart Light Bulb",
+          "description": "Control lighting with your smartphone or voice.",
+          "price": 19.99,
+          "image": "../images/products/color-changing-smart-led-bulb.webp",
+          "category": "Home",
+          "brand": "Samsung",
+          "rating": 4.5,
+          "seller_id": 3,
+          "reviews": [
+            {
+              "user": "Nina",
+              "comment": "Easy to set up and use.",
+              "rating": 5
+            },
+            {
+              "user": "Tom",
+              "comment": "Great integration with Alexa.",
+              "rating": 4
+            }
+          ],
+          "about": "Control your home's lighting with this smart light bulb. Features include smartphone control, voice commands, and energy efficiency.",
+          "stock": 120
+        },
+        {
+          "id": 10000018,
+          "product_Name": "Tablet",
+          "description": "Portable tablet for work and entertainment.",
+          "price": 399.99,
+          "image": "../images/products/tablet.jpg",
+          "category": "Electronics",
+          "brand": "Samsung",
+          "rating": 4.6,
+          "seller_id": 3,
+          "reviews": [
+            {
+              "user": "Oliver",
+              "comment": "Excellent display quality.",
+              "rating": 5
+            },
+            { "user": "Nancy", "comment": "Very responsive.", "rating": 4 }
+          ],
+          "about": "Enjoy the portability and power of this tablet. Perfect for browsing, watching videos, and productivity tasks.",
+          "stock": 50
+        },
+        {
+          "id": 10000019,
+          "product_Name": "Robot Vacuum Cleaner",
+          "description": "Automatic vacuum cleaner for hassle-free cleaning.",
+          "price": 249.99,
+          "image": "../images/products/PPL_13_eufy-by-Anker-RoboVac-X8-Hybrid-Robot-Vacuum.jpg",
+          "category": "Home",
+          "brand": "Dell",
+          "rating": 4.4,
+          "seller_id": 3,
+          "reviews": [
+            { "user": "Patrick", "comment": "Cleans thoroughly.", "rating": 5 },
+            { "user": "Laura", "comment": "Quiet and efficient.", "rating": 4 }
+          ],
+          "about": "Keep your floors clean with this robot vacuum cleaner. Automatically navigates and cleans your home, saving you time and effort.",
+          "stock": 30
+        },
+        {
+          "id": 10000020,
+          "product_Name": "Portable Charger",
+          "description": "High-capacity portable charger for devices.",
+          "price": 39.99,
+          "image": "../images/products/chargerL.jpg",
+          "category": "Electronics",
+          "brand": "Samsung",
+          "rating": 4.7,
+          "seller_id": 3,
+          "reviews": [
+            {
+              "user": "Sophia",
+              "comment": "Charges my phone quickly.",
+              "rating": 5
+            },
+            {
+              "user": "Ethan",
+              "comment": "Very convenient for travel.",
+              "rating": 4
+            }
+          ],
+          "about": "Never run out of battery with this high-capacity portable charger. Ideal for smartphones, tablets, and other devices.",
+          "stock": 80
+        },
+        {
+          "id": 10000021,
+          "product_Name": "Smart Thermostat",
+          "description": "Energy-saving thermostat with remote control.",
+          "price": 129.99,
+          "image": "../images/products/thermoL.jpg",
+          "category": "Home",
+          "brand": "Dell",
+          "rating": 4.6,
+          "seller_id": 3,
+          "reviews": [
+            { "user": "George", "comment": "Easy to install.", "rating": 5 },
+            {
+              "user": "Hannah",
+              "comment": "Saves on energy bills.",
+              "rating": 4
+            }
+          ],
+          "about": "Control your home's temperature with this smart thermostat. Features include remote control, energy savings, and easy installation.",
+          "stock": 40
+        },
+        {
+          "id": 10000022,
+          "product_Name": "Air Purifier",
+          "description": "Keep your air clean and fresh with this purifier.",
+          "price": 149.99,
+          "image": "../images/products/purify.webp",
+          "category": "Home",
+          "brand": "Samsung",
+          "rating": 4.5,
+          "seller_id": 3,
+          "reviews": [
+            {
+              "user": "Isabella",
+              "comment": "Improves air quality significantly.",
+              "rating": 5
+            },
+            { "user": "Mason", "comment": "Quiet operation.", "rating": 4 }
+          ],
+          "about": "Ensure clean and fresh air in your home with this air purifier. Features include HEPA filtration and quiet operation.",
+          "stock": 25
+        },
+        {
+          "id": 10000023,
+          "product_Name": "Smart Door Lock",
+          "description": "Secure your home with this smart door lock.",
+          "price": 199.99,
+          "image": "../images/products/smart locker.webp",
+          "category": "Home",
+          "brand": "iPhone",
+          "rating": 4.4,
+          "seller_id": 3,
+          "reviews": [
+            {
+              "user": "Liam",
+              "comment": "Easy to install and use.",
+              "rating": 5
+            },
+            { "user": "Emma", "comment": "Very secure.", "rating": 4 }
+          ],
+          "about": "Enhance your home's security with this smart door lock. Features include remote control, keyless entry, and easy installation.",
+          "stock": 20
+        },
+        {
+          "id": 10000024,
+          "product_Name": "Noise-Canceling Earbuds",
+          "description": "Wireless earbuds with active noise cancellation.",
+          "price": 79.99,
+          "image": "../images/products/noise cancelation.jpg",
+          "category": "Electronics",
+          "brand": "Samsung",
+          "rating": 4.6,
+          "seller_id": 3,
+          "reviews": [
+            {
+              "user": "Lucas",
+              "comment": "Excellent noise cancellation.",
+              "rating": 5
+            },
+            { "user": "Olivia", "comment": "Comfortable fit.", "rating": 4 }
+          ],
+          "about": "Enjoy your music without distractions with these noise-canceling earbuds. Features include wireless connectivity and a comfortable fit.",
+          "stock": 60
+        },
+        {
+          "id": 10000025,
+          "product_Name": "Smart Refrigerator",
+          "description": "Modern refrigerator with smart features.",
+          "price": 1199.99,
+          "image": "../images/products/smart-refrigerator.jpg",
+          "category": "Home",
+          "brand": "Dell",
+          "rating": 4.8,
+          "seller_id": 3,
+          "reviews": [
+            {
+              "user": "Daniel",
+              "comment": "Spacious and convenient.",
+              "rating": 5
+            },
+            {
+              "user": "Emily",
+              "comment": "Keeps food fresh for longer.",
+              "rating": 4
+            }
+          ],
+          "about": "Upgrade your kitchen with this smart refrigerator. Features include temperature control, spacious storage, and smart connectivity.",
+          "stock": 10
+        },
+        {
+          "id": 10000026,
+          "product_Name": "Smart Oven",
+          "description": "High-tech oven with smart cooking features.",
+          "price": 799.99,
+          "image": "../images/products/smart-ovenlead.jpeg",
+          "category": "Home",
+          "brand": "Samsung",
+          "rating": 4.7,
+          "seller_id": 3,
+          "reviews": [
+            { "user": "Ethan", "comment": "Cooks food evenly.", "rating": 5 },
+            { "user": "Sophia", "comment": "Very easy to use.", "rating": 4 }
+          ],
+          "about": "Prepare meals effortlessly with this smart oven. Features include precise temperature control, smart recipes, and easy cleaning.",
+          "stock": 15
+        },
+        {
+          "id": 10000027,
+          "product_Name": "Dishwasher",
+          "description": "Efficient and quiet dishwasher for clean dishes.",
+          "price": 499.99,
+          "image": "../images/products/dishwasher.jpg",
+          "category": "Home",
+          "brand": "iPhone",
+          "rating": 4.5,
+          "seller_id": 3,
+          "reviews": [
+            {
+              "user": "Benjamin",
+              "comment": "Cleans dishes thoroughly.",
+              "rating": 5
+            },
+            {
+              "user": "Charlotte",
+              "comment": "Very quiet operation.",
+              "rating": 4
+            }
+          ],
+          "about": "Keep your dishes spotless with this efficient dishwasher. Features include quiet operation, multiple cleaning modes, and energy efficiency.",
+          "stock": 25
+        },
+        {
+          "id": 10000028,
+          "product_Name": "Microwave Oven",
+          "description": "Compact microwave oven for quick meals.",
+          "price": 149.99,
+          "image": "../images/products/microwave.webp",
+          "category": "Home",
+          "brand": "Samsung",
+          "rating": 4.3,
+          "seller_id": 3,
+          "reviews": [
+            { "user": "James", "comment": "Heats food quickly.", "rating": 4 },
+            {
+              "user": "Amelia",
+              "comment": "Compact and easy to use.",
+              "rating": 4
+            }
+          ],
+          "about": "Reheat and cook meals quickly with this compact microwave oven. Features include multiple power levels and a user-friendly interface.",
+          "stock": 40
+        },
+        {
+          "id": 10000029,
+          "product_Name": "Smart Washing Machine",
+          "description": "Efficient washing machine with smart features.",
+          "price": 699.99,
+          "image": "../images/products/smart washing machine.avif",
+          "category": "Home",
+          "brand": "iPhone",
+          "rating": 4.6,
+          "seller_id": 3,
+          "reviews": [
+            {
+              "user": "Henry",
+              "comment": "Cleans clothes perfectly.",
+              "rating": 5
+            },
+            { "user": "Ava", "comment": "Easy to operate.", "rating": 4 }
+          ],
+          "about": "Keep your clothes clean and fresh with this smart washing machine. Features include energy efficiency, smart controls, and multiple washing modes.",
+          "stock": 20
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+@mixin generate-grid($breakpoint) {
+  @for $i from 1 through 12 {
+    .#{$breakpoint}-col-#{$i} {
+      @include respond-to($breakpoint) {
+        grid-column: span $i;
+      }
+    }
+    .#{$breakpoint}-offset-#{$i} {
+      @include respond-to($breakpoint) {
+        grid-column-start: $i + 1;
+      }
+    }
+  }
+}
